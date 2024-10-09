@@ -13,7 +13,7 @@ jobs:
           path: |
             build/main
             build/tests
-            build/rm
+            build/bm
 
   tests:
     needs: build
