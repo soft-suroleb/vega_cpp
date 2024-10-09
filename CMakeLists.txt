@@ -3,7 +3,7 @@ project(vega_cpp)
 
 include_directories(include)
 
-add_executable(main main.cpp addition.cpp)
+add_executable(main main.cpp src/addition.cpp)
 
 # include(FetchContent)
 # FetchContent_Declare(
