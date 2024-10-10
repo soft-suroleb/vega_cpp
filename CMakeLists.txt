@@ -33,22 +33,3 @@ gtest_discover_tests(tests)
 
 add_executable(bm benchmark/main.cpp src/addition.cpp)
 target_link_libraries(bm benchmark::benchmark)
-
-# find_package(Doxygen)
-# if(DOXYGEN_FOUND)
-
-#     set(DOXYGEN_DIR ${CMAKE_CURRENT_SOURCE_DIR}/docs)
-#     set(DOXYGEN_INPUT ${DOXYGEN_DIR}/Doxyfile.in)
-#     set(DOXYGEN_OUTPUT ${DOXYGEN_DIR}/Doxyfile)
-
-#     configure_file(${DOXYGEN_INPUT} ${DOXYGEN_OUTPUT} @ONLY)
-#     add_custom_target(
-#         docs
-#         COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUTPUT}
-#         WORKING_DIRECTORY ${DOXYGEN_DIR}
-#         VERBATIM
-#     )
-
-# else(DOXYGEN_FOUND)
-#     message(STATUS "WARNING: Doxygen not found - Reference manual will not be created")
-# endif(DOXYGEN_FOUND)
